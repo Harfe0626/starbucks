@@ -116,7 +116,7 @@
               </div>
             </div>
           </div>
-          <a href="javascript:void(0)" class="notice-line__more">
+          <a href="/notice/notice_form.php" class="notice-line__more">
             <span class="material-icons">add_circle</span>
           </a>
         </div>
