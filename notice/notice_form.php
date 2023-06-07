@@ -36,7 +36,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
   <link rel="stylesheet" href="../css/common.css" />
   <link rel="stylesheet" href="../css/signin.css" />
-  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/notice.css" />
   <script defer src="../js/common.js"></script>
   <script type="text/javascript">
     $(document).ready(function()
@@ -48,59 +48,53 @@
 </head>
 <body>
   <!--HEADER-->
-  <header>
+<header>
   <?php include '../header.php' ?>
- </header>
+</header>
   
 <section class="notice">
-    <h1>공지사항</h1>
+    <div class="sub_tit_wrap">
+        <div class="sub_tit_inner">
+            <h2><a href="./notice_form.php"><img src="../images/notice_tit.jpg"></a></h2>
+            <ul class="smap">
+                 <li><a href="../index.php"><img src="../images/icon_home.png"></a></li>
+                <li><img class="arrow" src="../images/icon_arrow.png"></li>
+                <li class="en"><a href="javascript:void(0)">WHAT'S NEW</a></li>
+                <li><img class="arrow" src="../images/icon_arrow.png"></li>
+                <li><a href="./notice_form.php" class="this">공지사항</a></li>
+            </ul>
+        </div>
+    </div>
 
-  <!-- 서브 타이틀 -->
-            <div class="sub_tit_wrap">
-                <div class="sub_tit_inner">
-                    <h2><img src="/common/img/whatsnew/notice_tit.jpg" alt="공지사항" /></h2>
-                    <ul class="smap">
-                        <li><a href="/index.do"><img src="//image.istarbucks.co.kr/common/img/common/icon_home.png" alt="홈으로"></a></li>
-                        <li><img class="arrow" src="//image.istarbucks.co.kr/common/img/common/icon_arrow.png" alt="하위메뉴"></li>
-                        <li class="en"><a href="/whats_new/index.do">WHAT'S NEW</a></li>
-                        <li><img class="arrow" src="//image.istarbucks.co.kr/common/img/common/icon_arrow.png" alt="하위메뉴"></li>
-                        <li><a href="/whats_new/notice_list.do" class="this">공지사항</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- 서브 타이틀 end -->
-            <!-- container -->
-            <div id="container">
-                <!-- 공지사항 -->
-				<!-- <div class="news_sch_wrap">
-                	<p><input type="text" name="sch_bar" id="sch_bar" placeholder="검색어를 입력해 주세요."> <a href="javascript:void(0)" class="newBoardSearchBtn">검색</a></p>
-                </div>        -->       
-                <div class="notice_wrap">
-                	
-                	<div class="news_sch_wrap">
-	                	<p><label for="sch_bar" class="a11y">검색어</label><!-- 접근성_20171123 label 추가 --><input type="text" name="sch_bar" id="sch_bar" placeholder="검색어를 입력해 주세요."> <a href="javascript:void(0)" class="newBoardSearchBtn">검색</a></p>
-	                </div>
-	                
-                    <table summary="공지사항" class="notice_tb">
-                        <caption class="hid">공지사항 번호, 제목, 날짜, 조회수 테이블</caption>
-                        <colgroup>
-                            <col width="5.45454%">
-                            <col width="74.5454%">
-                            <col width="10.90909%">
-                            <col width="*">
-                        </colgroup>
-                        <thead>
-                            <tr>
-                                <th scope="col">NO</th>
-                                <th scope="col">제목</th>
-                                <th scope="col">날짜</th>
-                                <th scope="col">조회수</th>
-                            </tr>
-                        </thead>
-                        <tbody id="notice">
+    <div id="container">
+        <div class="notice_wrap">
+            <div class="news_sch_wrap">
+	            <p>
+                    <label for="sch_bar" class="a11y">검색어</label>
+                    <input type="text" name="sch_bar" id="sch_bar" placeholder="검색어를 입력해 주세요."> 
+                    <a href="javascript:void(0)" class="newBoardSearchBtn">검색</a>
+                </p>
+	        </div>  
+            <table summary="공지사항" class="notice_tb">
+                <caption class="hid">공지사항 번호, 제목, 날짜, 조회수 테이블</caption>
+                <colgroup>
+                    <col width="5.45454%">
+                    <col width="74.5454%">
+                    <col width="10.90909%">
+                    <col width="*">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">NO</th>
+                        <th scope="col">제목</th>
+                        <th scope="col">날짜</th>
+                        <th scope="col">조회수</th>
+                    </tr>
+                </thead>
+                <tbody id="notice">
 
-                        </tbody>
-                    </table>
+                </tbody>
+            </table>
                     <ul class="m_notice_list" id="m_notice_list">
 					</ul>
                     <div class="news_pagination">
