@@ -179,8 +179,12 @@
     <div class="inner">
 
       <div class="btn-group">
-        <div class="btn btn--reverse sign-up">회원가입</div>
-        <div class="btn sign-in">로그인</div>
+        <div class="btn btn--reverse sign-up">
+          <a href="./member/member_form.php">회원가입</a>
+        </div>
+        <div class="btn sign-in">
+          <a href="./signin/signin_form.php">로그인</a>
+        </div>
         <div class="btn gift">e-Gift 선물하기</div>
       </div>
 

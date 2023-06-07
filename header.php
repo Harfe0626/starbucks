@@ -342,13 +342,3 @@
       </ul>
 
     </div>
-
-    <!--BADGES-->
-    <div class="badges">
-      <div class="badge">
-        <img src="./images/badge3.jpg" alt="Badge" />
-      </div>
-      <div class="badge">
-        <img src="./images/badge2.jpg" alt="Badge" />
-      </div>
-    </div>

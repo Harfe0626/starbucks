@@ -15,8 +15,6 @@
   <meta property="og:image" content="../images/starbucks_seo.jpg" />
   <meta property="og:url" content="https://starbucks.co.kr" />
 
-  <!--Twitter Card-->
-  <!--https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started-->
   <meta property="twitter:card" content="summary" />
   <meta property="twitter:site" content="Starbucks" />
   <meta property="twitter:title" content="Starbucks Coffee Korea" />
@@ -25,7 +23,6 @@
   <meta property="twitter:url" content="https://starbucks.co.kr" />
 
   <!--파비콘-->
-  <!--<link rel="shortcut icon" href="favicon.ico" />-->
   <link rel="icon" href="../favicon.png" />
   <!--브라우저 스타일 초기화-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
