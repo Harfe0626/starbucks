@@ -15,15 +15,6 @@
   <meta property="og:image" content="./images/starbucks_seo.jpg" />
   <meta property="og:url" content="https://starbucks.co.kr" />
 
-  <!--Twitter Card-->
-  <!--https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started-->
-  <meta property="twitter:card" content="summary" />
-  <meta property="twitter:site" content="Starbucks" />
-  <meta property="twitter:title" content="Starbucks Coffee Korea" />
-  <meta property="twitter:description" content="스타벅스는 세계에서 가장 큰 다국적 커피 전문점으로, 64개국에서 총 23,187개의 매점을 운영하고 있습니다." />
-  <meta property="twitter:image" content="./images/starbucks_seo.jpg" />
-  <meta property="twitter:url" content="https://starbucks.co.kr" />
-
   <!--파비콘-->
   <!--<link rel="shortcut icon" href="favicon.ico" />-->
   <link rel="icon" href="./favicon.png" />
@@ -40,6 +31,7 @@
   <!--GSAP & ScrollToPlugin-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js" integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q==" crossorigin="anonymous"></script>
+  
   <!--Swiper-->
   <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
   <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
@@ -48,16 +40,9 @@
   <!--Lodash-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
 
-  <script defer src="./js/youtube.js"></script>
   <script defer src="./js/common.js"></script>
   <script defer src="./js/main.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function()
-    {
-      $("header").load("../header.php");
-      $("footer").load("../footer.php");
-    });
-    </script>
+  
 </head>
 <body>
   <!--HEADER-->
@@ -103,16 +88,16 @@
           <div class="swiper-container">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <a href="javascript:void(0)">크리스마스 & 연말연시 스타벅스 매장 영업시간 변경 안내</a>
+                <a href="javascript:void(0)">개인정보처리방침 개정 안내</a>
               </div>
               <div class="swiper-slide">
-                <a href="javascript:void(0)">[당첨자 발표] 2021 스타벅스 플래너 영수증 이벤트</a>
+                <a href="javascript:void(0)">스타벅스 코리아 사칭 (NFT 관련등) 홈페이지 및 이메일 주의 안내</a>
               </div>
               <div class="swiper-slide">
-                <a href="javascript:void(0)">스타벅스커피 코리아 애플리케이션 버전 업데이트 안내</a>
+                <a href="javascript:void(0)">시스템 개선 및 서비스 점검 안내</a>
               </div>
               <div class="swiper-slide">
-                <a href="javascript:void(0)">[당첨자 발표] 뉴이어 전자영수증 이벤트</a>
+                <a href="javascript:void(0)">신세계 유니버스 클럽 이용 약관 안내</a>
               </div>
             </div>
           </div>
@@ -187,21 +172,6 @@
         </div>
         <div class="btn gift">e-Gift 선물하기</div>
       </div>
-
-    </div>
-  </section>
-
-
-  <!--YOUTUBE VIDEO-->
-  <section class="youtube">
-    <div class="youtube__area">
-      <div id="player"></div>
-    </div>
-    <div class="youtube__cover"></div>
-    <div class="inner">
-
-      <img src="./images/floating1.png" alt="Icon" class="floating floating1" />
-      <img src="./images/floating2.png" alt="Icon" class="floating floating2" />
 
     </div>
   </section>
