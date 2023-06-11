@@ -85,7 +85,7 @@ img {
 }
 .select_birth_box .birth_select 
 { 
-    background:#fff url("../img/util/mem/icon_arrow_down.png") 90% center no-repeat;  
+    background:#fff;  
     float:left; 
     position:relative; 
     width:32%; 
@@ -138,13 +138,13 @@ img {
 }
 .btn_mem_login {
     background: #006633;
-    border-radius: 3px;
+    border-radius: 4px;
     margin-top: 25px;
     text-align: center;
     margin: 0 20px;
-    max-width: 570px;
+    width: 570px;
 }
-.btn_mem_login a {
+.btn_mem_login p {
     color: #fff;
     font-size: 24px;
     display: block;
@@ -156,177 +156,4 @@ img {
     line-height:1.6; 
     padding:10px 0; 
     text-align:center; 
-}
-.limit_txt { 
-    color:#444; 
-    display:none; 
-    font-size:16px; 
-    line-height:1.6; 
-    margin-top:15px; 
-}
-.find_mem_wrap 
-{ 
-    max-width:570px; 
-    margin:0 auto; 
-    padding:70px 0 50px; 
-}
-.find_mem_ttl {
-    display: block;
-    font-size: 30px;
-    font-weight: normal;
-    margin-bottom: 30px;
-    text-align: center;
-}
-.renew_joinform_v2 {
-    border: 1px solid #ddd;
-    border-radius: 3px;
-    box-sizing: border-box;
-    max-width: 570px;
-    margin: 0 auto 30px;
-    position: relative;
-}
-.find_mem_sally {
-    margin: 0 auto;
-    text-align: center;
-    padding: 30px 20px 0;
-    background: url(../images/icon_find_sally.png) 50% 100% no-repeat;
-    width: 205px;
-    height: 182px;
-}
-img {
-    vertical-align: top;
-    max-width: 100%;
-}
-.find_form_txt {
-    background: #fff;
-    border-bottom: 1px solid #ddd;
-    color: #777;
-    font-size: 18px;
-    line-height: 24px;
-    text-align: center;
-    padding: 30px 20px 30px;
-}
-.renew_input_box { 
-    background:#fff; 
-    border-bottom:1px solid #ddd; 
-    padding:20px 20px; 
-    position:relative; 
-}
-.hid {
-    position: absolute;
-    left: -9999px;
-    font-size: 0;
-    width: 0;
-    height: 0;
-    text-indent: -9999px;
-    overflow: hidden;
-}
-.renew_input_box.id_chk input {
-    width:100%;
-}
-.renew_input_box.gender_chk input { 
-    width:49%; 
-}
-.renew_input_box input { 
-    border:1px solid #ddd; 
-    border-radius:3px; 
-    box-sizing:border-box; 
-    display:inline-block; 
-    max-width:530px;
-    padding:15px; width:100%;
-}
-.renew_input_box strong { 
-    color:#222; 
-    display:block; 
-    font-size:18px; 
-    margin-bottom:10px; 
-}
-.renew_input_box:after { 
-    clear:both; 
-    content:""; 
-    display:block; 
-}
-.type_green {
-    color: #006241;
-}
-.select_birth_box .birth_select 
-{ 
-    background:#fff url("../img/util/mem/icon_arrow_down.png") 90% center no-repeat;  
-    float:left; 
-    position:relative; 
-    width:32%; 
-}
-.select_birth_box .birth_select 
-{ 
-    float:left; 
-    width:32%; 
-    margin-right:1.760%;
-}
-.select_birth_box .birth_select select 
-{ 
-    display:block; 
-    font-size:14px; 
-    border: 1px solid #dddddd;
-    width:100%; 
-    -webkit-appearance:none;
-    -moz-appearance:none; 
-    appearance:none; 
-    padding:16px 5px; 
-    background: transparent 
-}
-.select_birth_box .birth_select.year 
-{
-    width:31.161%; 
-}
-.select_birth_box .birth_select.month 
-{ 
-    width:24.11%; 
-}
-.select_birth_box .birth_select.day 
-{ 
-    width:24.11%; 
-}
-
-.icon_mem_sally {
-    text-align: center;
-    max-width: 570px;
-    margin: 0 auto;
-    display: block;
-}
-.modify_txt2 {
-    color: #666;
-    line-height: 1.4;
-    margin-bottom: 15px;
-    font-size: 14px;
-    margin-top: 15px;
-    letter-spacing: -1px;
-    text-align: center;
-}
-.btn_mem_login {
-    background: #006633;
-    border-radius: 3px;
-    margin-top: 25px;
-    text-align: center;
-    margin: 0 20px;
-    max-width: 570px;
-}
-.btn_mem_login a {
-    color: #fff;
-    font-size: 24px;
-    display: block;
-    line-height: 65px;
-}
-.mem_nick_txt { 
-    background:#edebe7; 
-    color:#666; 
-    line-height:1.6; 
-    padding:10px 0; 
-    text-align:center; 
-}
-.limit_txt { 
-    color:#444; 
-    display:none; 
-    font-size:16px; 
-    line-height:1.6; 
-    margin-top:15px; 
 }

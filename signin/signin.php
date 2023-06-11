@@ -1,6 +1,7 @@
 <?php
 $id = $_POST["id"]; 
 $pass = $_POST["pw"];
+$nick = $_POST["nick"];
 $con = mysqli_connect("localhost", "user1", "12345", "sample"); 
 $sql = "select * from members where id='$id'";
 $result = mysqli_query($con, $sql); 
@@ -34,6 +35,12 @@ else
       session_start(); 
       $_SESSION["userid"] = $row["id"];
       $_SESSION["username"] = $row["name"];
+      $_SESSION["useryear"] = $row["year"];
+      $_SESSION["usermonth"] = $row["month"];
+      $_SESSION["userday"] = $row["day"];
+      $_SESSION["userphone"] = $row["phone"];
+      $_SESSION["useremail"] = $row["email"];
+      $_SESSION["usernick"] = $row["nick"];
       $_SESSION["userlevel"] = $row["level"];
       $_SESSION["userpoint"] = $row["point"];
       echo("

@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- 생성 시간: 23-06-07 10:22
--- 서버 버전: 10.4.27-MariaDB
--- PHP 버전: 8.2.0
+-- 생성 시간: 23-06-11 15:41
+-- 서버 버전: 10.4.28-MariaDB
+-- PHP 버전: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -32,7 +32,12 @@ CREATE TABLE `members` (
   `id` char(15) NOT NULL,
   `pw` char(15) NOT NULL,
   `name` char(10) NOT NULL,
-  `email` char(80) DEFAULT NULL,
+  `year` int(10) NOT NULL,
+  `month` int(10) NOT NULL,
+  `day` int(10) NOT NULL,
+  `phone` char(20) NOT NULL,
+  `email` char(80) NOT NULL,
+  `nick` char(10) NOT NULL,
   `regist_day` char(20) DEFAULT NULL,
   `level` int(11) DEFAULT NULL,
   `point` int(11) DEFAULT NULL
@@ -42,10 +47,9 @@ CREATE TABLE `members` (
 -- 테이블의 덤프 데이터 `members`
 --
 
-INSERT INTO `members` (`num`, `id`, `pw`, `name`, `email`, `regist_day`, `level`, `point`) VALUES
-(1, 'strik241', '12345', '신정엽', 'strik241@gmail.com', '2023-04-27 (04:20)', 9, 0),
-(2, 'strike0626', '12345', '강아지똥구멍', 'strike0626@naver.com', '2023-04-27 (04:21)', 9, 0),
-(3, 'freedom0626', '12345', '병아리콧구멍', 'freedom0626@naver.com', '2023-04-27 (04:22)', 9, 0);
+INSERT INTO `members` (`num`, `id`, `pw`, `name`, `year`, `month`, `day`, `phone`, `email`, `nick`, `regist_day`, `level`, `point`) VALUES
+(1, 'strik241', '12345', '신정엽', 1999, 6, 26, '010-7127-1089', 'strik241@gmail.com', '병아리콧구멍', '2023-04-27 (04:20)', 9, 0),
+(9, 'jihae00812', '12345', '신지혜', 1997, 9, 13, '010-3234-1089', 'jihae00812@naver.com', '몽이누나', '2023-06-10 (18:39)', 9, 0);
 
 --
 -- 덤프된 테이블의 인덱스
@@ -65,7 +69,7 @@ ALTER TABLE `members`
 -- 테이블의 AUTO_INCREMENT `members`
 --
 ALTER TABLE `members`
-  MODIFY `num` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `num` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
