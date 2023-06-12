@@ -27,6 +27,8 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
   <!--Style Sheets-->
   <link rel="stylesheet" href="../css/common.css" />
+  <link rel="stylesheet" href="../css/header.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
   <link rel="stylesheet" href="../css/signin.css" />
   <link rel="stylesheet" href="../css/notice.css" />
   <script defer src="../js/common.js"></script>
@@ -64,7 +66,7 @@
         </div>
     </div>
 
-    <form method="POST" action="notice_modify_action.php">
+    <form method="POST" action="notice_modify_action.php?num=<?=$num?>&page=<?=$page?>">
     <div id="container">
         <div class="notice_wrap">
             <table summary="공지사항" class="notice_tb">

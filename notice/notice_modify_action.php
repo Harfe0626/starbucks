@@ -11,7 +11,8 @@ $URL = "notice_form.php?page=$page";
 
 $query = "update board_notice set subject='$subject', content='$content'";
 $query .= " where num=$num";
-$result = $con->query($query);
+$result = mysqli_query($con, $query);
+// $result = $con->query($query);
 
 mysqli_close($con); 
 

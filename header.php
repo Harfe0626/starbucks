@@ -27,7 +27,7 @@
                 <?php if(!$userid) { ?>
                 <li><a href="/signin/signin_form.php">My Starbucks</a></li> 
                 <?php } else { ?>
-                  <li><a href="/member/member_modify_form.php">My Starbucks</a></li> 
+                  <li><a href="/member/member_modify_form.php?id=<?=$userid?>">My Starbucks</a></li> 
                 <?php } ?>
           <li>
             <a href="javascript:void(0)">Customer Service & Ideas</a>

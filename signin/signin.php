@@ -1,7 +1,7 @@
 <?php
 $id = $_POST["id"]; 
 $pass = $_POST["pw"];
-$nick = $_POST["nick"];
+
 $con = mysqli_connect("localhost", "user1", "12345", "sample"); 
 $sql = "select * from members where id='$id'";
 $result = mysqli_query($con, $sql); 

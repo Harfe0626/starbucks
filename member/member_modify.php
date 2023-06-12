@@ -10,13 +10,21 @@ $phone = $_POST["phone"];
 $email  = $_POST["email"];
 $nick = $_POST["nick"];
 
+$URL = "../index.php"; 
+
 $sql = "update members set name='$name', year='$year', month='$month', day='$day', phone='$phone', email='$email', nick='$nick'"; 
 $sql .= " where id='$id'";
 mysqli_query($con, $sql);
+$result = mysqli_query($con, $sql);
 mysqli_close($con);
-echo "
-<script>
-    location.href = '../index.php'; 
-</script>
-";
-?>
+
+if ($result) {
+    ?>
+        <script>
+            alert("수정되었습니다.");
+            location.replace("<?php echo $URL ?>");
+        </script>
+    <?php } else {
+        echo "다시 시도해주세요.";
+    }
+    ?>

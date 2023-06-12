@@ -27,15 +27,26 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
   <!--Style Sheets-->
   <link rel="stylesheet" href="../css/common.css" />
+  <link rel="stylesheet" href="../css/header.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
   <link rel="stylesheet" href="../css/signin.css" />
   <link rel="stylesheet" href="../css/member_form.css" />
   <script defer src="../js/common.js"></script>
   <?php
+  		$id = $_GET["id"];
+
         $con = mysqli_connect("localhost", "user1", "12345", "sample");
-        $query = "select * from members order by num desc";   
+		$query = "select * from members where id='$id'";  
         $result = mysqli_query($con, $query);
-        $total = mysqli_num_rows($result);
-		$rows = mysqli_fetch_assoc($result);
+
+		$rows = mysqli_fetch_array($result);
+		$name = $rows["name"];
+		$year = $rows["year"];
+		$month = $rows["month"];
+		$day = $rows["day"];
+		$phone = $rows["phone"];
+		$email = $rows["email"];
+		$nick = $rows["nick"];
     ?>
 </head>
 <body>
@@ -53,35 +64,35 @@
 						<section class="renew_joinform_v2">
 							<div class="renew_input_box id_chk">
                                 <strong>아이디<span class="type_green">(필수)</span></strong>
-                                <input type="text" name="id" id="id" required value="<?php echo $rows['id'] ?>">
+                                <input type="text" name="id" id="id" required value="<?=$id?>">
 							</div>
 						</section>
 						<section class="renew_joinform_v2">
 							<div class="renew_input_box gender_chk">
 								<strong>이름<span class="type_green">(필수)</span></strong>
-								<input type="text" id="name" name="name" required value="<?php echo $rows['name'] ?>">
+								<input type="text" id="name" name="name" required value="<?=$name?>">
 							</div>
 							<div class="renew_input_box birth_chk">
 								<strong>생년월일<span class="type_green">(필수)</span></strong>
 								<div class="select_birth_box">
 									<div class="birth_select year">
-										<input type="text" name="year" id="year" required value="<?php echo $rows['year'] ?>">
+										<input type="text" name="year" id="year" required value="<?=$year?>">
 									</div>
 									<div class="birth_select month">
-										<input type="text" name="month" id="month" required value="<?php echo $rows['month'] ?>">
+										<input type="text" name="month" id="month" required value="<?=$month?>">
 									</div>
 									<div class="birth_select day">
-										<input type="text" name="day" id="day" required value="<?php echo $rows['day'] ?>">
+										<input type="text" name="day" id="day" required value="<?=$day?>">
 									</div>
 								</div>
 							</div>
 							<div class="renew_input_box phone_chk">
 								<strong>휴대폰번호<span class="type_green">(필수)</span></strong>
-								<input type="text" name="phone" id="phone" value="<?php echo $rows['phone'] ?>">
+								<input type="text" name="phone" id="phone" value="<?=$phone?>">
 							</div>
 							<div class="renew_input_box mail_chk">
                                 <strong>메일<span class="type_green">(필수)</span></strong>
-								<input type="text" name="email" id="email" required value="<?php echo $rows['email'] ?>">
+								<input type="text" name="email" id="email" required value="<?=$email?>">
 							</div>	
 						</section>
 								
@@ -95,7 +106,7 @@
 							</p>
 								<div class="renew_input_box user_nick_nm_chk bd_none">
                                 <strong>닉네임(선택)</strong>
-                                    <input type="text" name="nick" id="nick" value="<?php echo $rows['nick'] ?>">
+                                    <input type="text" name="nick" id="nick" value="<?=$nick?>">
 								</div>	
 							</section>
 							<p class="modify_txt2">

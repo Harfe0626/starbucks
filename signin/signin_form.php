@@ -26,6 +26,8 @@
   <!--Google Material Icons-->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
   <link rel="stylesheet" href="../css/common.css" />
+  <link rel="stylesheet" href="../css/header.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
   <link rel="stylesheet" href="../css/signin.css" />
 
   <script defer src="../js/common.js"></script>
