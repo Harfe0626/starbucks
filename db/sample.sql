@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- 생성 시간: 23-06-07 10:22
+-- 생성 시간: 23-06-13 03:16
 -- 서버 버전: 10.4.27-MariaDB
 -- PHP 버전: 8.2.0
 
@@ -45,51 +45,18 @@ CREATE TABLE `board_notice` (
 --
 
 INSERT INTO `board_notice` (`num`, `id`, `name`, `subject`, `content`, `regist_day`, `hit`, `file_name`, `file_type`, `file_copied`) VALUES
-(1, 'jjlee', '이준재', '그리스신화박물관 홈페이지 OPEN', '내용무', '2015-02-09', 7462, NULL, NULL, NULL),
-(2, 'jjlee', '이준재', '매월 마지막 수요일은 문화가...', '내용무', '2015-02-27', 8156, NULL, NULL, NULL),
-(3, 'jjlee', '이준재', '가정의 달 HAPPY EVENT!!', '내용무', '2015-04-15', 7543, NULL, NULL, NULL),
-(4, 'jjlee', '이준재', '7월 제주도민을 위한 SNS EVENT!', '내용무', '2015-07-06', 7659, NULL, NULL, NULL),
-(5, 'jjlee', '이준재', '2017년 정유년 새해 복 많이 받...', '내용무', '2017-01-26', 4384, NULL, NULL, NULL),
-(6, 'jjlee', '이준재', '2017년도 문화가 있는날은 계속...', '내용무', '2017-06-23', 3661, NULL, NULL, NULL),
-(7, 'jjlee', '이준재', '2018년 새해 복 많이 받으세요', '내용무', '2018-02-15', 3524, NULL, NULL, NULL),
-(8, 'jjlee', '이준재', '관람 가능한 곳이 어디인지요', '1. 그리스신화 박물관은 전시 안내에 나와 있는 것 이외의 전시물이 있는 것인가요?\r\n전시안내에는 창조관, 올림포스관..... 그리스마을이 있어요\r\n\r\n2. 입장권에는 체험하기 [트릭아이미술관]이 있는데, 홈피에는 설명이 없어서 입장권을 개별로 할 지 통합권으로 해야할지...\r\n\r\n3. 홍보 영상에는 그리스 의상 입어보기가 있는데 어떤 티켓을 끊어야 하는지요?\r\n\r\n4. 홍보 영상에 미로 공원도 있던데 입장하면 그곳도 가볼 수 있는지요?\r\n\r\n가보고 싶은데, 어디까지 관람이 가능한지 궁금합니다~\r\n\r\n솔직히 방문 코스에 포함할 지 고민중입니다. 홍보영상에 제시된 곳을 모두 가본다면 꼭 방문하고 싶습니다', '2023-05-16', 3476, NULL, NULL, NULL),
-(13, 'jjlee', '', 'test3', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sollicitudin id velit sed tincidunt. Duis vitae efficitur augue. In lacinia non turpis eu pharetra. Mauris posuere risus dolor, eleifend facilisis urna egestas iaculis. Etiam vehicula diam eget felis auctor iaculis. Aliquam at sem vel tellus faucibus imperdiet. Aenean sed purus eu nulla commodo venenatis. Praesent dictum vulputate metus at imperdiet. Nulla at porttitor ante, eget lacinia mauris. Nam nibh nunc, tincidunt vitae ipsum eget, placerat eleifend tortor. Nullam sed libero luctus, cursus purus quis, congue nunc. Cras vitae est sit amet lectus luctus suscipit id viverra justo. Nullam vel ornare dui. Ut varius justo augue, in eleifend tortor iaculis vitae.', '2023-05-11', 0, NULL, NULL, NULL),
-(17, 'jjlee', '', 'test4', 'Morbi eros tortor, efficitur sit amet ante nec, bibendum iaculis est. Phasellus in purus interdum nulla lacinia porttitor vitae sed purus. Phasellus consequat tellus porttitor placerat facilisis. Aenean ullamcorper auctor finibus. Ut rhoncus tortor vulputate libero mollis mollis. Ut vulputate augue fringilla turpis finibus, in dignissim erat convallis. Integer fringilla accumsan auctor. Phasellus pulvinar erat iaculis molestie luctus. Donec in odio et nibh consectetur rutrum nec eget felis. Cras molestie bibendum sapien nec tincidunt. Suspendisse potenti. Nulla at libero vel mi vehicula finibus nec sit amet lectus. Nullam quis justo libero. Ut volutpat, ex nec iaculis volutpat, velit tortor gravida nulla, pellentesque pretium tellus felis a leo. Vestibulum elit dui, eleifend eu luctus nec, dapibus sit amet mauris.', '2023-05-11', 0, NULL, NULL, NULL),
-(18, 'jjlee', '', 'test2', 'Phasellus fermentum dui tincidunt, pretium tortor a, varius nisi. Proin euismod augue id sem ornare vestibulum. Maecenas in vestibulum dui. Integer odio enim, congue ut quam posuere, viverra fringilla justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eros leo, scelerisque fringilla magna eu, mattis posuere massa. Proin feugiat, massa blandit facilisis blandit, dui magna congue ex, eget ultrices orci tellus sit amet enim. Nunc dapibus velit vel ex rhoncus, nec gravida massa luctus. Sed justo nisl, blandit a dui at, dapibus aliquet sem. Pellentesque eu nisi et ante posuere sodales. Duis tempus felis gravida risus sodales facilisis. Duis sagittis leo neque, id blandit turpis aliquam a. Suspendisse vitae vulputate nisl.', '2023-05-11', 0, NULL, NULL, NULL);
-
--- --------------------------------------------------------
-
---
--- 테이블 구조 `board_qna`
---
-
-CREATE TABLE `board_qna` (
-  `num` int(11) NOT NULL,
-  `id` char(15) NOT NULL,
-  `name` char(15) NOT NULL,
-  `subject` char(200) NOT NULL,
-  `content` text NOT NULL,
-  `regist_day` char(20) NOT NULL,
-  `hit` int(11) NOT NULL,
-  `file_name` char(40) DEFAULT NULL,
-  `file_type` char(40) DEFAULT NULL,
-  `file_copied` char(40) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- 테이블의 덤프 데이터 `board_qna`
---
-
-INSERT INTO `board_qna` (`num`, `id`, `name`, `subject`, `content`, `regist_day`, `hit`, `file_name`, `file_type`, `file_copied`) VALUES
-(1, '', 'Dimitris Papado', 'Search for your museum', 'Hello, my name is Dimitris Papadooulos. I am undergraduate student of Technological Institution of Western Greece, Department of Museology. The topic of my study is the making of a museum of ancient mythology in Ileia. Because the only in the whole planet about the myth is yours i would like to take piecies of information from the manager or a curator for my study. If you can help for you, i will send you a questionnaire or a skype meeting with me. I prefer to inclue your museum because is similar with the possible making for museum with the same topic in Greece.\r\n\r\nPlease keep my informed!\r\n\r\n', '2017-11-14', 7462, NULL, NULL, NULL),
-(2, '', '권해림', '그리스 신화박물관 너무 좋아요', '그리스 신화박물관 너무 좋네요\r\n나중 제주도 가면 제일먼저 가볼게요\r\n사랑합니다\r\n권혜림올림', '2018-03-10', 8156, NULL, NULL, NULL),
-(3, '', '11', '반려동물 동반 가능 한가요', '반려동물 동반 가능 한가요', '2018-07-19', 7543, NULL, NULL, NULL),
-(4, '', '휴관문의', '휴관문의 드립니다?', '관람 안내에 휴관에 대해서는 안내가 안되어 있는데..\r\n\r\n혹시!! 연중무휴로 운영이 되는지 문의 드립니다.\r\n\r\n확인 부탁 드립니다.', '2018-12-13', 7659, NULL, NULL, NULL),
-(5, '', '트립본', '[홍보물 요청] 예비 관광 벤처기업 트립본', '안녕하세요.\r\n\r\n저희는 2019년 예비관광벤처기업으로 선정된 여행정보 기업 트립본입니다.\r\n\r\n이번에 트립본은 한국관광공사와 협약을 맺고 외국인들을 대상으로 한국을 알리는 콘텐츠와 어플리케이션을 제작중입니다.\r\n\r\n저희 콘텐츠에 그리스 신화 박물관을 소개하고 싶은데, 홍보 목적으로 보유하고 계신 사진이나 영상이 따로 있다면 저희가 받아볼 수 있을까요?\r\n아니면 홈페이지나 인스타그램에 올라온 사진을 저희가 사용해도 괜찮을지요?\r\n\r\n감사합니다.\r\n\r\n트립본 신동원 드림', '2019-12-11', 4384, NULL, NULL, NULL),
-(6, '', '유지은', '제휴문의', '안녕하세요\r\n인플루언서 협찬플랫폼 포포몬의 유지은입니다.\r\n\r\n저희 회사 위더스콘텐츠는 sns인기채널 여행다녀왔습니다 의 운영사로 영향력 있는 많은 인플루언서를 보유하고 있습니다.\r\n\r\n자사 보유 db를 기반으로 지난 1월 브랜드를 홍보해줄 인플루언서 체험단을 매칭시켜주는 플랫폼 포포몬을 오픈하였습니다.\r\n\r\n\r\n\r\n현재 베타버전으로 전 서비스를 무료로 운영하고 있사오니 들어가셔 확인해보시고, 제휴를 원하시면 아래 명함으로 편하게 연락주세요\r\n\r\n포포몬 바로가기 popomon.com', '2022-04-14', 3661, NULL, NULL, NULL),
-(7, 'jjlee', '이수정', '물품보관여부 문의', '내용무', '2022-09-04', 3524, NULL, NULL, NULL),
-(8, 'jjlee', '이미란', '관람 가능한 곳이 어디인지요', '1. 그리스신화 박물관은 전시 안내에 나와 있는 것 이외의 전시물이 있는 것인가요?\r\n전시안내에는 창조관, 올림포스관..... 그리스마을이 있어요\r\n\r\n2. 입장권에는 체험하기 [트릭아이미술관]이 있는데, 홈피에는 설명이 없어서 입장권을 개별로 할 지 통합권으로 해야할지...\r\n\r\n3. 홍보 영상에는 그리스 의상 입어보기가 있는데 어떤 티켓을 끊어야 하는지요?\r\n\r\n4. 홍보 영상에 미로 공원도 있던데 입장하면 그곳도 가볼 수 있는지요?\r\n\r\n가보고 싶은데, 어디까지 관람이 가능한지 궁금합니다~\r\n\r\n솔직히 방문 코스에 포함할 지 고민중입니다. 홍보영상에 제시된 곳을 모두 가본다면 꼭 방문하고 싶습니다', '2023-05-16', 3476, NULL, NULL, NULL),
-(9, '', '신정엽', 'test1', 'testtesttestttest', '2023-05-16', 0, NULL, NULL, NULL);
+(1, '', '', '시스템 개선 및 서비스 점검 안내', '안녕하세요. 스타벅스 코리아입니다.\r\n\r\n보다 나은 서비스를 제공해 드리고자 아래와 같이 시스템 작업을 진행합니다.\r\n\r\n \r\n\r\n- 일자 및 시간 : 2023년 05월 09일(화) 00시 00분 ~ 05월 09일(화) 05시 00분\r\n\r\n- 대상 서비스 : 스타벅스 홈페이지/스타벅스 APP 내 회원정보 조회 서비스 및 현대카드 본인인증 서비스\r\n\r\n \r\n\r\n작업 시간 중 해당 서비스 이용 시 불편사항이 발생할 수 있는 점 양해 부탁드립니다.\r\n\r\n감사합니다.', '2023-05-09', 7464, NULL, NULL, NULL),
+(2, '', '', '시스템 개선 및 서비스 점검 안내', '안녕하세요. 스타벅스 코리아입니다.\r\n\r\n보다 나은 서비스를 제공해 드리고자 시스템 점검 작업을 진행합니다.\r\n\r\n \r\n\r\n- 일자 및 시간 : 2023년 5월 10일(수) 00:00 ~ 03:00 (3시간)\r\n\r\n- 대상 서비스 : 스타벅스 APP\r\n\r\n \r\n\r\n작업 시간 중 해당 서비스 이용 시 불편사항이 발생할 수 있는 점 양해 부탁드립니다.\r\n\r\n감사합니다.', '2023-05-10', 8157, NULL, NULL, NULL),
+(3, '', '', '시스템 개선 및 서비스 점검 안내', '안녕하세요. 스타벅스 코리아입니다.\r\n\r\n보다 나은 서비스를 제공해 드리고자 시스템 점검 작업을 진행합니다.\r\n\r\n- 일자 및 시간 : 2023년 5월 16일(화) 00:00 ~ 04:00 (4시간)\r\n- 대상 서비스 : 스타벅스 APP, 스타벅스 홈페이지\r\n\r\n작업 시간 중 해당 서비스 이용 시 불편사항이 발생할 수 있는 점 양해 부탁드립니다.\r\n감사합니다.', '2023-05-16', 7545, NULL, NULL, NULL),
+(4, '', '', '시스템 개선 및 서비스 점검 안내', '안녕하세요. 스타벅스 코리아입니다.\r\n\r\n보다 나은 스타벅스 현대카드 관련 서비스 제공을 위한 시스템 점검을 진행합니다.\r\n\r\n \r\n\r\n- 점검 시간 : 2023년 5월 15일(월) 오후 11:30 ~ 5월 16일(화) 오전 02:30 \r\n\r\n \r\n\r\n해당 시간 중 스타벅스 웹/앱을 통한 스타벅스 현대카드 서비스 이용 시\r\n\r\n불편 사항이 발생할 수 있는 점 양해 부탁드립니다.\r\n\r\n \r\n\r\n감사합니다.', '2023-05-16', 7660, NULL, NULL, NULL),
+(5, '', '', '시스템 개선 및 서비스 점검 안내', '안녕하세요. 스타벅스 코리아입니다.\r\n\r\n보다 나은 서비스를 제공해 드리고자 아래와 같이 시스템 개선 및 점검을 진행합니다.\r\n\r\n1. APP PUSH & 알림 서비스 점검\r\n- 일자 및 시간 : 2023년 05월 17일(수) 00시 00분 ~ 05월 17일(수) 04시 00분\r\n- 제한 서비스 : PUSH 및 알림함 조회 서비스 \r\n\r\n2. APP 서비스 점검\r\n- 일자 및 시간 : 2023년 05월 18일(목) 00시 00분 ~ 05월 18일(목) 05시 00분\r\n- 제한 서비스 : 홈페이지 / APP / GEAR / Bixby / 삼성카드 스타벅스 오더 / 신한PayFAN 스타벅스오더 / 네이버 주문 / 스타벅스 현대카드 발급 서비스 / VOC\r\n\r\n해당 점검 시간 중 서비스 이용이 제한되는 점 양해 부탁드립니다.\r\n감사합니다.', '2023-05-17', 4387, NULL, NULL, NULL),
+(6, '', '', '개인정보처리방침 개정 안내', '개인정보처리방침 개정 안내\r\n안녕하세요.\r\n스타벅스 코리아 개인정보처리방침이 개정되어 변경내용을 안내드립니다.\r\n\r\n변경일정\r\n사전 공지일 : 2023년 5월 22일\r\n개정 시행일 : 2023년 5월 29일\r\n본 개정에 동의하지 않으시는 경우 거부의사 표시(회원탈퇴)를 하실 수 있으며,\r\n거부의사를 표시하지 않으신 경우 개정에 동의하신 것으로 간주됩니다.', '2023-05-20', 3662, NULL, NULL, NULL),
+(7, '', '', '시스템 개선 및 서비스 점검 안내', '안녕하세요. 스타벅스 코리아입니다. \r\n보다 나은 서비스를 제공해 드리고자 아래와 같이 시스템 개선 및 점검을 진행합니다. \r\n\r\n- 일자 및 시간 : 2023년 05월 21일 (일) 00시 00분 ~ 05월 21일 (일) 06시 00분\r\n- 제한 서비스 : 홈페이지 / APP / GEAR / Bixby / 삼성카드 스타벅스 오더 / 신한카드 스타벅스 오더 / 네이버 주문 / 스타벅스 현대카드 발급 서비스 / 고객의 소리\r\n\r\n해당 점검 시간 중 서비스 이용이 제한되는 점 양해 부탁드립니다. \r\n감사합니다.  ', '2023-05-21', 3525, NULL, NULL, NULL),
+(8, '', '', '시스템 개선 및 서비스 점검 안내', '안녕하세요. 스타벅스 코리아입니다. \r\n보다 나은 서비스를 제공해 드리고자 아래와 같이 시스템 개선 및 점검을 진행합니다. \r\n\r\n- 일자 및 시간 : 2023년 05월 22일 (월) 00시 00분 ~ 05월 22일 (월) 06시 00분\r\n- 제한 서비스 : 홈페이지 / APP / GEAR / Bixby / 삼성카드 스타벅스 오더 / 신한카드 스타벅스 오더 / 네이버 주문 / 스타벅스 현대카드 발급 서비스 / 고객의 소리\r\n\r\n해당 점검 시간 중 서비스 이용이 제한되는 점 양해 부탁드립니다. \r\n감사합니다.  ', '2023-05-22', 3491, NULL, NULL, NULL),
+(9, '', '', '시스템 개선 및 서비스 점검 안내', '안녕하세요. 스타벅스 코리아입니다. \r\n보다 나은 서비스를 제공해 드리고자 아래와 같이 시스템 개선 및 점검을 진행합니다. \r\n\r\n- 일자 및 시간 : 2023년 05월 23일 (화) 00:00 ~ 06:00 (6시간)\r\n- 제한 서비스 : 홈페이지 / APP / GEAR / Bixby / 삼성카드 스타벅스 오더 / 신한카드 스타벅스 오더 / 네이버 주문 / 스타벅스 현대카드 발급 서비스 / 고객의 소리\r\n\r\n해당 점검 시간 중 서비스 이용이 제한되는 점 양해 부탁드립니다. \r\n감사합니다.  ', '2023-05-23', 4, NULL, NULL, NULL),
+(10, '', '', '신세계 유니버스 클럽 이용 약관 안내', '안녕하세요. 스타벅스 코리아입니다. \r\n신세계 유니버스 클럽의 이용약관 제정을 아래와 같이 안내해 드립니다.\r\n\r\n1. 사유 : 신세계 유니버스 클럽 서비스 제공\r\n2. 제정일 : 2023년 06월 08일\r\n3. 약관의 내용 : \r\n신세계 유니버스 클럽 이용 약관 확인하기\r\n\r\n감사합니다. ', '2023-06-08', 9, NULL, NULL, NULL),
+(11, '', '', '시스템 개선 및 서비스 점검 안내', '안녕하세요. 스타벅스 코리아입니다.\r\n보다 나은 서비스를 제공해 드리고자 시스템 점검 작업을 진행합니다.\r\n \r\n- 일자 및 시간 : 2023년 5월 28일(일) 00:00 ~ 05:00 (5시간)\r\n- 대상 서비스 : 스타벅스 홈페이지 / 스타벅스 APP / GEAR / Bixby / 삼성카드 스타벅스 오더 / 신한카드 스타벅스 오더 / 네이버 주문 / 스타벅스 현대카드 발급 서비스 / 고객의 소리\r\n\r\n작업 시간 중 해당 서비스 이용 시 불편사항이 발생할 수 있는 점 양해 부탁드립니다.\r\n감사합니다.\r\n\r\nPellentesque eu nisi et ante posuere sodales. \r\n\r\nDuis tempus felis gravida risus sodales facilisis. \r\n\r\nDuis sagittis leo neque, id blandit turpis aliquam a. \r\n\r\nSuspendisse vitae vulputate nisl.', '2023-05-28', 7, NULL, NULL, NULL),
+(12, '', '', '스타벅스 코리아 사칭 (NFT 관련 등) 홈페이지 및 이메일 주의 안내', '안녕하세요. 스타벅스 코리아입니다.\r\n\r\n최근 스타벅스 코리아를 사칭하여 이메일을 발송하거나, 허위 홈페이지를 통해 이벤트 참여를 유도하는 사기 행위가 이루어지고 있어 \r\n고객 여러분의 각별한 주의를 부탁드립니다.\r\n\r\n사칭 사례) siren-collection, starbucks-promotion, starbucks-sirennft, starbucks-siren, starbucks-mint 등의 회사 사칭 홈페이지(주소)를 통해 허위 NFT 이벤트 참여 유도\r\n\r\n스타벅스 공식 홈페이지 주소는 아래와 같으며 접속하실 때 주소를 잘 확인해주시기 바랍니다.\r\nhttps://www.starbucks.co.kr\r\n\r\n또한 당사 안내, 광고 등의 이메일은 starbucks@starbucks.co.kr에서 발송해드리고 있으니 \r\n그 외 유사한 이름의 발신자로부터 이메일을 받으신 경우 본문의 링크를 클릭하지 않도록 유의해주시기 바랍니다.\r\n\r\n불법 스팸, 피싱, 해킹 등이 의심되는 경우 아래 기관으로 신고하여 상담 받을 수 있습니다.\r\n\r\n- 한국인터넷 진흥원 대국민서비스(118사이버도우미) 국번없이 118, 사이트 주소: https://www.kisa.or.kr/cyberhelper118\r\n\r\n감사합니다.', '2023-06-11', 12, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -102,7 +69,12 @@ CREATE TABLE `members` (
   `id` char(15) NOT NULL,
   `pw` char(15) NOT NULL,
   `name` char(10) NOT NULL,
-  `email` char(80) DEFAULT NULL,
+  `year` int(10) NOT NULL,
+  `month` int(10) NOT NULL,
+  `day` int(10) NOT NULL,
+  `phone` char(20) NOT NULL,
+  `email` char(80) NOT NULL,
+  `nick` char(10) NOT NULL,
   `regist_day` char(20) DEFAULT NULL,
   `level` int(11) DEFAULT NULL,
   `point` int(11) DEFAULT NULL
@@ -112,10 +84,10 @@ CREATE TABLE `members` (
 -- 테이블의 덤프 데이터 `members`
 --
 
-INSERT INTO `members` (`num`, `id`, `pw`, `name`, `email`, `regist_day`, `level`, `point`) VALUES
-(1, 'strik241', '12345', '신정엽', 'strik241@gmail.com', '2023-04-27 (04:20)', 9, 0),
-(2, 'strike0626', '12345', '강아지똥구멍', 'strike0626@naver.com', '2023-04-27 (04:21)', 9, 0),
-(3, 'freedom0626', '12345', '병아리콧구멍', 'freedom0626@naver.com', '2023-04-27 (04:22)', 9, 0);
+INSERT INTO `members` (`num`, `id`, `pw`, `name`, `year`, `month`, `day`, `phone`, `email`, `nick`, `regist_day`, `level`, `point`) VALUES
+(1, 'strik241', '12345', '신정엽', 1999, 6, 26, '010-7127-1089', 'freedom0626@naver.com', '병아리콧구멍', '2023-04-27 (04:20)', 9, 0),
+(2, 'jihae00812', '12345', '신지혜', 1997, 9, 13, '010-3234-1089', 'jihae00812@naver.com', '몽이누나', '2023-06-12 (05:24)', 9, 0),
+(12, 'strike0626', '12345', '신정엽', 1999, 6, 26, '010-7127-1089', 'strike0626@naver.com', '몽이똥구멍', '2023-06-12 (05:27)', 9, 0);
 
 --
 -- 덤프된 테이블의 인덱스
@@ -125,12 +97,6 @@ INSERT INTO `members` (`num`, `id`, `pw`, `name`, `email`, `regist_day`, `level`
 -- 테이블의 인덱스 `board_notice`
 --
 ALTER TABLE `board_notice`
-  ADD PRIMARY KEY (`num`);
-
---
--- 테이블의 인덱스 `board_qna`
---
-ALTER TABLE `board_qna`
   ADD PRIMARY KEY (`num`);
 
 --
@@ -147,19 +113,13 @@ ALTER TABLE `members`
 -- 테이블의 AUTO_INCREMENT `board_notice`
 --
 ALTER TABLE `board_notice`
-  MODIFY `num` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
-
---
--- 테이블의 AUTO_INCREMENT `board_qna`
---
-ALTER TABLE `board_qna`
-  MODIFY `num` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `num` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- 테이블의 AUTO_INCREMENT `members`
 --
 ALTER TABLE `members`
-  MODIFY `num` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `num` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -6,17 +6,7 @@
 
   <title>Starbucks Coffee Korea</title>
 
-  <!--Open Graph-->
-  <!--http://ogp.me/-->
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Starbucks" />
-  <meta property="og:title" content="Starbucks Coffee Korea" />
-  <meta property="og:description" content="스타벅스는 세계에서 가장 큰 다국적 커피 전문점으로, 64개국에서 총 23,187개의 매점을 운영하고 있습니다." />
-  <meta property="og:image" content="./images/starbucks_seo.jpg" />
-  <meta property="og:url" content="https://starbucks.co.kr" />
-
   <!--파비콘-->
-  <!--<link rel="shortcut icon" href="favicon.ico" />-->
   <link rel="icon" href="./favicon.png" />
   <!--브라우저 스타일 초기화-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
@@ -25,6 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet" />
   <!--Google Material Icons-->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <!--CSS-->
   <link rel="stylesheet" href="./css/common.css" />
   <link rel="stylesheet" href="./css/header.css" />
   <link rel="stylesheet" href="./css/footer.css" />
@@ -44,7 +35,6 @@
 
   <script defer src="./js/common.js"></script>
   <script defer src="./js/main.js"></script>
-  
 </head>
 <body>
   <!--HEADER-->

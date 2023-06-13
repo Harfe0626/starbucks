@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- 생성 시간: 23-06-11 15:41
--- 서버 버전: 10.4.28-MariaDB
--- PHP 버전: 8.2.4
+-- 생성 시간: 23-06-13 03:15
+-- 서버 버전: 10.4.27-MariaDB
+-- PHP 버전: 8.2.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -48,8 +48,9 @@ CREATE TABLE `members` (
 --
 
 INSERT INTO `members` (`num`, `id`, `pw`, `name`, `year`, `month`, `day`, `phone`, `email`, `nick`, `regist_day`, `level`, `point`) VALUES
-(1, 'strik241', '12345', '신정엽', 1999, 6, 26, '010-7127-1089', 'strik241@gmail.com', '병아리콧구멍', '2023-04-27 (04:20)', 9, 0),
-(9, 'jihae00812', '12345', '신지혜', 1997, 9, 13, '010-3234-1089', 'jihae00812@naver.com', '몽이누나', '2023-06-10 (18:39)', 9, 0);
+(1, 'strik241', '12345', '신정엽', 1999, 6, 26, '010-7127-1089', 'freedom0626@naver.com', '병아리콧구멍', '2023-04-27 (04:20)', 9, 0),
+(2, 'jihae00812', '12345', '신지혜', 1997, 9, 13, '010-3234-1089', 'jihae00812@naver.com', '몽이누나', '2023-06-12 (05:24)', 9, 0),
+(12, 'strike0626', '12345', '신정엽', 1999, 6, 26, '010-7127-1089', 'strike0626@naver.com', '몽이똥구멍', '2023-06-12 (05:27)', 9, 0);
 
 --
 -- 덤프된 테이블의 인덱스
@@ -69,7 +70,7 @@ ALTER TABLE `members`
 -- 테이블의 AUTO_INCREMENT `members`
 --
 ALTER TABLE `members`
-  MODIFY `num` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `num` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -1,18 +1,18 @@
-.sub_tit_wrap {
+.subtitle {
+    background: white;
     width: 100%;
     height: 98px;
-    background: #ffffff;
     padding:120px 0 10px; 
 }
-.sub_tit_wrap div.sub_tit_inner {
+.subtitle div.subtitle_top {
     width: 1100px;
     height: 91px;
     margin: 0 auto;
     position: relative;
 }
-.sub_tit_wrap h2 {
-    font: bold 36px Avenir, Arial, georgia;
-    color: #222222;
+.subtitle h2 {
+    color: black;
+    font: bold 36px;
     padding-top: 30px;
     position: relative;
 }
@@ -20,32 +20,25 @@ img {
     vertical-align: top;
     max-width: 100%;
 }
-ul.smap {
+ul.map {
     position: absolute;
     right: 0;
     top: 60px;
 }
-ul.smap li {
+ul.map li {
     vertical-align: middle;
     float: left;
     height: 16px;
     line-height: 16px;
     margin: 0 2.5px;
 }
-ul.smap a {
+ul.map a {
+    color: gray;
     font-size: 12px;
-    color: #666666;
 }
-ul.smap a.this {
-    font-size: 12px;
-    color: #222222;
-}
-ul.smap img.arrow {
+ul.map img.next {
     position: relative;
     top: 2px;
-}
-.en {
-    font-family: arial, HelveticaNeue, DroidSans, Sans-serif, Helvetica;
 }
 #container {
     width: 100%;
@@ -55,47 +48,38 @@ ul.smap img.arrow {
     padding-bottom: 80px;
     margin: 0 auto;
 }
-.news_sch_wrap {
+.notice_search_wrap {
     padding: 20px 30px;
     height: 38px;
-    background: #f4f4f2;
+    background: white;
     border-radius: 3px;
     margin-bottom: 40px;
     position: relative;
 }
-.news_sch_wrap p {
+.notice_search_wrap p {
     position: absolute;
     right: 30px;
     top: 20px;
 }
-.a11y {
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    clip: rect(0 0 0 0);
-    clip: rect(0, 0, 0, 0);
-    overflow: hidden;
-    position: absolute;
-}
-.news_sch_wrap p input {
+.notice_search_wrap p input {
     width: 321px;
     height: 36px;
     line-height: 36px;
-    border: 1px solid #ddd;
+    border: 1px solid whitesmoke;
     border-radius: 3px;
     text-indent: 10px;
-    color: #666;
+    color: gray;
 }
-.news_sch_wrap p a {
+.notice_search_wrap p a {
     display: inline-block;
     width: 54px;
     height: 38px;
     line-height: 38px;
-    background: #777;
+    background: gray;
     border-radius: 3px;
     font-size: 14px;
     font-weight: bold;
-    color: #fff;
+    color: white;
     text-align: center;
 }
 table {
@@ -123,101 +107,80 @@ col {
 table.notice_tb th {
     font-size: 14px;
     font-weight: bold;
-    color: #222222;
+    color: black;
     text-align: left;
     padding: 17px 0;
-    border-top: 1px solid #333333;
-    border-bottom: 1px solid #333333;
+    border-top: 1px solid #272727;
+    border-bottom: 1px solid #272727;
 }
 table.notice_tb td {
     font-size: 14px;
-    color: #666666;
+    color: gray;
     text-align: left;
     padding: 17px 0;
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 1px solid whitesmoke;
     line-height: 1.8;
 }
-div.news_pagination {
-    height: 27px;
-    margin-top: 50px;
-    width: 100%;
-}
-div.news_pagination ul.pager {
-    text-align: center;
-}
-div.news_pagination ul.pager li {
-    display: inline-block;
-    margin: 0 10px;
-    vertical-align: middle;
-    list-style: none;
-}
-div.news_pagination ul.pager li.active a {
-    font-weight: bold;
-    color: #0d5f34;
-    border-bottom: 1px solid #0d5f34;
-
-}
-div.btn_notice_wrap {
+div.button_notice {
     width: 1100px;
     height: 45px;
     position: relative;
     margin-top: 20px;
 }
-section.notice p.btn_notice_list {
+section.notice p.button_notice_list {
     border-radius: 3px;
     height: 45px;
     width: 84px;
-    background: #666666;
+    background: gray;
     position: absolute;
     right: 0;
     top: 0;
 }
-section.notice p.btn_notice_lista, 
-                p.btn_notice_listb, 
-                p.btn_notice_listc {
+section.notice p.button_notice_lista, 
+                p.button_notice_listb, 
+                p.button_notice_listc {
     border-radius: 3px;
     height: 45px;
     width: 84px;
-    background: #666666;
+    background: gray;
     right: 0;
     top: 0;
 }
-section.notice p.btn_notice_list a,
-                p.btn_notice_lista a,
-                p.btn_notice_listb a,
-                p.btn_notice_listc a {
+section.notice p.button_notice_list a,
+                p.button_notice_lista a,
+                p.button_notice_listb a,
+                p.button_notice_listc a {
     display: block;
     font-size: 14px;
-    color: #fff;
+    color: white;
     font-weight: bold;
     text-align: center;
     height: 45px;
     line-height: 45px;
     width: 100%;
 }
-.btn_notice_lista {
+.button_notice_lista {
     position: absolute;
     left: 1000px;
 }
-.btn_notice_listb {
+.button_notice_listb {
     position: absolute;
     left: 910px;
 }
-.btn_notice_listc {
+.button_notice_listc {
     position: absolute;
     left: 820px;
 }
 input[type=submit] {
-    background: #666666;
+    background: gray;
     border-radius: 3px;
     height: 45px;
     width: 84px;
-    background: #666666;
     position: absolute;
     right: 0;
     top: 0;
     font-size: 14px;
-    color: #fff;
+    color: white;
     font-weight: bold;
     text-align: center;
 }

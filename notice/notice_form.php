@@ -6,25 +6,10 @@
 
   <title>Starbucks Coffee Korea</title>
 
-  <!--Open Graph-->
-  <!--http://ogp.me/-->
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Starbucks" />
-  <meta property="og:title" content="Starbucks Coffee Korea" />
-  <meta property="og:description" content="스타벅스는 세계에서 가장 큰 다국적 커피 전문점으로, 64개국에서 총 23,187개의 매점을 운영하고 있습니다." />
-  <meta property="og:image" content="../images/starbucks_seo.jpg" />
-  <meta property="og:url" content="https://starbucks.co.kr" />
-
   <!--파비콘-->
-  <!--<link rel="shortcut icon" href="favicon.ico" />-->
   <link rel="icon" href="../favicon.png" />
   <!--브라우저 스타일 초기화-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
-  <!--Google Fonts - 나눔고딕-->
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet" />
-  <!--Google Material Icons-->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
   <!--Style Sheets-->
   <link rel="stylesheet" href="../css/common.css" />
   <link rel="stylesheet" href="../css/header.css" />
@@ -45,34 +30,33 @@
   <?php include '../header.php' ?>
 </header>
   
-<section class="notice">
-    <div class="sub_tit_wrap">
-        <div class="sub_tit_inner">
+<section class="notice"> 
+    <div class="subtitle">
+        <div class="subtitle_top">
             <h2><a href="./notice_form.php"><img src="../images/notice_tit.jpg"></a></h2>
-            <ul class="smap">
-                 <li><a href="../index.php"><img src="../images/icon_home.png"></a></li>
-                <li><img class="arrow" src="../images/icon_arrow.png"></li>
-                <li class="en"><a href="javascript:void(0)">WHAT'S NEW</a></li>
-                <li><img class="arrow" src="../images/icon_arrow.png"></li>
-                <li><a href="./notice_form.php" class="this">공지사항</a></li>
+            <ul class="map">
+                <li><a href="../index.php"><img src="../images/icon_home.png"></a></li>
+                <li><img class="next" src="../images/icon_arrow.png"></li>
+                <li><a>WHAT'S NEW</a></li>
+                <li><img class="next" src="../images/icon_arrow.png"></li>
+                <li><a href="./notice_form.php">공지사항</a></li>
             </ul>
         </div>
     </div>
 
     <div id="container">
         <div class="notice_wrap">
-            <div class="news_sch_wrap">
+            <div class="notice_search_wrap">
 	            <p>
-                    <label for="sch_bar" class="a11y">검색어</label>
-                    <input type="text" name="sch_bar" id="sch_bar" placeholder="검색어를 입력해 주세요."> 
-                    <a href="javascript:void(0)" class="newBoardSearchBtn">검색</a>
+                    <input type="text" placeholder="검색어를 입력해 주세요."> 
+                    <a>검색</a>
                 </p>
 	        </div>  
             <table summary="공지사항" class="notice_tb">
                 <colgroup>
-                    <col width="5.45454%">
-                    <col width="74.5454%">
-                    <col width="10.90909%">
+                    <col width="5.5%">
+                    <col width="75.5%">
+                    <col width="10%">
                     <col width="*">
                 </colgroup>
                 <thead>
@@ -138,9 +122,18 @@
                 </tbody>
             </table>
             <!-- 글쓰기 버튼 -->
-            <div class="btn_notice_wrap">
-            <p class="btn_notice_list">
-			    <a href="notice_write.php">글쓰기</a>
+            <div class="button_notice">
+            <p class="button_notice_list">
+            <?php if(!$userid) 
+            { ?>
+                <a href="../signin/signin.php">글쓰기</a>
+                <?php 
+            } 
+            else 
+            { ?>
+                <a href="notice_write.php">글쓰기</a>
+                <?php 
+            } ?>
             </p>
 		    </div>
         <!-- 글쓰기 버튼 end-->
